@@ -6,38 +6,45 @@
   <title>Timed Quiz</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="assets/javascript/app.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
+<div class="div1">
 <body>
 
-  <h1>Timed Quiz</h1>
+  <div class="div2">
+	  <h1>Timed Quiz</h1>
 
-  <h3 id="div1">Time Remaining: 30 seconds</h3>
+	  <h3 id=div1>Time Remaining: 30 seconds</h3>
 
-  <form>
-  <h2>Q1</h2>
-    <input type="checkbox">A1
-    <input type="checkbox">A2
-    <input type="checkbox">A3
-    <input type="checkbox">A4
-  </form>
+	  <div class="div3">  
+		  <form>
+		  	<h2>Which of these is not a crustacean?</h2>
+		  		<input type="radio" name="ocean" value="crab"> Crab
+		  		<input type="radio" name="ocean" id="correct1" value="mollusc"> Mollusc
+		  		<input type="radio" name="ocean" value="crayfish"> Crayfish
+		  		<input type="radio" name="ocean" value="lobster"> Lobster
+		  </form>
 
-  <form>
-  <h2>Q2</h2>
-    <input type="checkbox">A1
-    <input type="checkbox">A2
-    <input type="checkbox">A3
-    <input type="checkbox">A4
-  </form>
+		  <form>
+		  	<h2>How fast will gravity accelerate an object in free fall?</h2>
+		  		<input type="radio" name="physics" value="10ft"> 10 ft/s
+		  		<input type="radio" name="physics" value="10m"> 10 m/s
+		  		<input type="radio" name="physics" value="9.8ft"> 9.8 ft/s<sup>2</sup>
+		  		<input type="radio" name="physics" id = "correct2" value="9.8m"> 9.8 m/s<sup>2</sup>
+		  </form>
 
-  <form>
-  <h2>Q3</h2>
-    <input type="checkbox">A1
-    <input type="checkbox">A2
-    <input type="checkbox">A3
-    <input type="checkbox">A4
-  </form>
+		  <form>
+		  	<h2>About how many days does it take the moon to orbit the earth?</h2>
+		  		<input type="radio" name="moon" id = "correct3" value="27"> 27
+		  		<input type="radio" name="moon" value="10"> 10
+		  		<input type="radio" name="moon" value="28"> 28
+		  		<input type="radio" name="moon" value="30">30
+		  </form>
+	  </div>
+  </div>
 
 </body>
+</div>
 
 </html>

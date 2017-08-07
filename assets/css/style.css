@@ -1,0 +1,32 @@
+*{
+	margin: 0px;	
+	background: #75aaff;
+}
+
+.div1{
+	margin:auto;
+	width: 960px;
+	height: 960px;
+	text-align: center;
+}
+
+.div2{
+	padding-top: 20px;
+}
+
+.div3{
+	margin: 50px 0px 0px 0px;
+}
+
+body{	
+	background: url("../images/wormz/wormz.png");
+}
+
+h1{
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+	font-size: 300%;
+}
+
+h3{
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
