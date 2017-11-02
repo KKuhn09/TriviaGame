@@ -15,7 +15,6 @@
 }
 
 .div3{
-	margin: 50px 0px 0px 0px;
 }
 
 body{	
@@ -27,6 +26,24 @@ h1{
 	font-size: 300%;
 }
 
+h2{
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
 h3{
 	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+button{
+	padding: 10px 50px 10px 50px;
+	background-color: green;
+	border: none;
+	border-radius: 8px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+button:hover{
+	background-color: white;
+}
+button:active{
+	background-color: green;
 }
