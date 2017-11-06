@@ -60,7 +60,7 @@ var game = {
 	calculateScore: function(){
 		//For each question
 		for(var i=0;i<questions.length;i++){
-			//Select the checked radio button
+			//Select the checked radio button for each question
 			$.each($("input[name='question-"+i+"']:checked"), function(){
 				//If value of checked button equals the questions answer
 				if ($(this).val() === questions[i].correctAnswer) {
