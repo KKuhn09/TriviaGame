@@ -10,8 +10,8 @@ The application uses Javascript and jQuery to start a simple multiple choice tri
 
 Highlights
 ----------
-1) Uses the Windows setInterval method to update HTML every 1000ms (1 second) and end the game when the time is reaches 0
+* Uses the Windows setInterval method to update HTML every 1000ms (1 second) and end the game when the time is reaches 0
 
 Uses jQuery to:
-1) Update the pages HTML to display the games questions
-2) Calculate and display how many answers were correct, incorrect, and unanswered
+* Update the pages HTML to display the games questions
+* Calculate and display how many answers were correct, incorrect, and unanswered

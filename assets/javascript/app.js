@@ -11,6 +11,18 @@ var questions = [{
 	question: "About how many days does it take the moon to orbit the earth?",
 	answers: ["27", "10", "28", "30"],
 	correctAnswer: "27"
+},{
+	question: "What is the most spoken language in the world?",
+	answers: ["English", "German", "Chinese", "Spanish"],
+	correctAnswer: "Chinese"
+},{
+	question: "What kind of animal did Bill Clinton have in office?",
+	answers: ["Rabbit", "Dog", "Cat", "Turtle"],
+	correctAnswer: "Cat"
+},{
+	question: "How fast can a honey bee fly?",
+	answers: ["2MPH", "5MPH", "10MPH", "15MPH"],
+	correctAnswer: "15MPH"
 }];
 
 var timer; 
