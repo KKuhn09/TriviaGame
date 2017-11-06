@@ -21,21 +21,6 @@ var game = {
 	incorrect: 0,
 	counter: 30,
 
-	//Count down the games timer
-	countDown: function(){
-		//Update count down every 1 second 
-		var x = setInterval(function(){
-			game.counter--; //Decrement counter
-			$("#timer").html("Time Remaining: "+game.counter+" seconds"); //Display the result
-
-			if(game.counter == 0){ //If the count down is finished
-				clearInterval(x); //Stop the counter
-				game.endGame(); //End the game
-			}
-
-		}, 1000);
-	},
-
 	//Start the game
 	startGame: function(){
 		$(".div3").empty();  // Clear div3
@@ -56,6 +41,32 @@ var game = {
 			}
 		}
 	},
+	//Count down the games timer
+	countDown: function(){
+		//Update count down every 1 second 
+		var x = setInterval(function(){
+			game.counter--; //Decrement counter
+			$("#timer").html("Time Remaining: "+game.counter+" seconds"); //Display the result
+
+			if(game.counter == 0){ //If the count down is finished
+				clearInterval(x); //Stop the counter
+				game.endGame(); //End the game
+			}
+
+		}, 1000);
+	},	
+	//End the game
+	endGame: function(){
+
+		game.calculateScore();//Calculate score
+		$(".div3").empty();//Clear div3
+
+		//Display players score
+		$(".div3").append("<h3>Score:</h3><br>");
+		$(".div3").append("<h3>Correct Answers: "+game.correct+"</h3>");
+		$(".div3").append("<h3>Incorrect Answers: "+game.incorrect+"</h3>");
+		$(".div3").append("<h3>Unanswered: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");
+	},
 	//Calculate the players score
 	calculateScore: function(){
 		//For each question
@@ -71,18 +82,6 @@ var game = {
 			    }
 			});
 		}
-	},
-	//End the game
-	endGame: function(){
-
-		game.calculateScore();//Calculate score
-		$(".div3").empty();//Clear div3
-
-		//Display players score
-		$(".div3").append("<h3>Score:</h3><br>");
-		$(".div3").append("<h3>Correct Answers: "+game.correct+"</h3>");
-		$(".div3").append("<h3>Incorrect Answers: "+game.incorrect+"</h3>");
-		$(".div3").append("<h3>Unanswered: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");
 	}
 }
 
